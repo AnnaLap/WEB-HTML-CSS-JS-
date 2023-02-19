@@ -1,0 +1,65 @@
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    background: #4084bda1;
+    color: rgba(20, 11, 75, 0.776);
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+header {
+    background: #4085bd00;
+    color: rgba(243, 254, 28, 0.921);
+    font-family: 'Gajraj One', cursive;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media (min-width: 992px) {
+    main {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+    }
+}
+
+footer {
+    background: rgba(0, 0, 139, 0);
+    color: white;
+}
+
+nav {
+    background: rgba(79, 110, 136, 0);
+}
+
+.content {
+    background: rgba(148, 0, 211, 0);
+}
+
+aside {
+    background: rgba(255, 140, 0, 0);
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: auto 1fr auto;
+}
+@media (min-width: 992px) {
+    .container {
+        grid-template-rows: minmax(150px, auto) 1fr minmax(100px, auto);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
